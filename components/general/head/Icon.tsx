@@ -4,20 +4,9 @@ import SearchIcon from '../../../assets/search.svg';
 import NotificationIcon from '../../../assets/notification.svg';
 
 function Search() {
-  const [color, setColor] = useState('blue');
-  const handleClickSearch = () => {
-    color === 'blue' ? setColor('red') : setColor('blue');
-  };
+  const handleClickSearch = () => {};
   return (
-    <Pressable
-      onPress={() => handleClickSearch()}
-      style={{
-        backgroundColor: color,
-        borderWidth: 2,
-        borderColor: 'red',
-        borderStyle: 'solid',
-      }}
-    >
+    <Pressable onPress={() => handleClickSearch()} style={{}}>
       <SearchIcon
         height={styles.icon.height}
         width={styles.icon.width}
@@ -28,12 +17,13 @@ function Search() {
 }
 
 function Notification() {
+  const handleClickNotifications = () => {};
   return (
-    <Pressable>
+    <Pressable onPress={() => handleClickNotifications()}>
       <NotificationIcon
         height={styles.icon.height}
         width={styles.icon.width}
-        opacity={styles.icon.opacity}
+        opacity={styles.icon.opacity + 0.2}
       />
     </Pressable>
   );

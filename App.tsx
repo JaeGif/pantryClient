@@ -11,12 +11,14 @@ import {
   StatusBar,
 } from 'react-native';
 import Head from './components/general/head/Head';
+import MenuBar from './components/general/menu/MenuBar';
 
 export default function App() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
       <View style={styles.container}>
         <Head />
+        <MenuBar />
       </View>
     </SafeAreaView>
   );
