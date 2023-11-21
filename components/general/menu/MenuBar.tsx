@@ -1,10 +1,23 @@
 import { StyleSheet, Text, View } from 'react-native';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Add, Pantry, Recipes, Settings, ShoppingList } from './Icon';
 type MenuOptions = 'pantry' | 'recipes' | 'add' | 'shopping' | 'settings';
+import {
+  CompositeNavigationProp,
+  useNavigation,
+} from '@react-navigation/native';
+import { RootStackParamList } from '../../../types';
+import { StackNavigationProp } from '@react-navigation/stack';
+
+type NavigationProp = StackNavigationProp<RootStackParamList>;
+
 const MenuBar = () => {
+  const navigation = useNavigation<NavigationProp>();
   const [selected, setSelected] = useState<MenuOptions>('pantry');
 
+  useEffect(() => {
+    navigation.navigate(selected);
+  }, [selected]);
   return (
     <View style={styles.container}>
       <Pantry handleSelect={setSelected} selected={selected === 'pantry'} />

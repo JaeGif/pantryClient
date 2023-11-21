@@ -29,7 +29,11 @@ const Pantry = ({ handleSelect, selected }: IconsProps) => {
 
 const Recipes = ({ handleSelect, selected }: IconsProps) => {
   return (
-    <Pressable onPress={() => handleSelect('recipes')}>
+    <Pressable
+      onPress={() => {
+        handleSelect('recipes');
+      }}
+    >
       <RecipeIcon
         fill={
           selected

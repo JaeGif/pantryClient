@@ -1,8 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 function Storage() {
-  return <View></View>;
+  return (
+    <View>
+      <Text>Pantry</Text>
+    </View>
+  );
 }
 
 export default Storage;
