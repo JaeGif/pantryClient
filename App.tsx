@@ -28,7 +28,11 @@ export default function App() {
       <View style={styles.container}>
         <NavigationContainer>
           <Head />
-          <Stack.Navigator>
+          <Stack.Navigator
+            screenOptions={{
+              headerShown: false,
+            }}
+          >
             <Stack.Screen name='pantry' component={Storage} />
             <Stack.Screen name='recipes' component={Recipe} />
             <Stack.Screen name='add' component={Add} />

@@ -36,12 +36,11 @@ export default MenuBar;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingLeft: 10,
-    paddingRight: 10,
     alignItems: 'flex-start',
+    padding: 10,
+    paddingBottom: 0,
   },
 });

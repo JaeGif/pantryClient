@@ -7,11 +7,15 @@ export const theme = {
       secondary_highlight: '#339989',
     },
   },
+  pageContainer: {
+    padding: 10,
+  },
   card: {
     container: {
       // gets a shadow
       boxShadow: 10,
     },
+
     content: {
       icon: {},
       text: {
