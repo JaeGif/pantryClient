@@ -9,13 +9,13 @@ function Storage() {
       style={styles.container}
       contentContainerStyle={styles.container}
     >
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
+      <ItemCard foodType='dessert' />
+      <ItemCard foodType='vegetable' />
+      <ItemCard foodType='fruit' />
+      <ItemCard foodType='meat' />
+      <ItemCard foodType='carbohydrate' />
+      <ItemCard foodType='spice' />
+      <ItemCard foodType='hot drink' />
     </ScrollView>
   );
 }

@@ -5,3 +5,15 @@ export type RootStackParamList = {
   shopping: undefined;
   settings: undefined;
 };
+
+export type FoodCategories =
+  | 'dessert'
+  | 'vegetable'
+  | 'fruit'
+  | 'fish'
+  | 'meat'
+  | 'carbohydrate'
+  | 'ingredient'
+  | 'spice'
+  | 'general'
+  | 'hot drink';

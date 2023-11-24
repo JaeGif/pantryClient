@@ -27,3 +27,7 @@ export const theme = {
     },
   },
 };
+
+/*     borderColor: 'red',
+    borderStyle: 'solid',
+    borderWidth: 1, */
